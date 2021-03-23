@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cal.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="calculator">
+    <form action="" name="calcy" id="forms">
+       <input type="text" name="answer" id="display_answer">
+
+        <div class="layer-1">
+           <input type="text" value="c" id="clearbutton" onclick="calcy.answer.value=''">
+           <input type="text" value="=" id="answerbutton" onclick="calcy.answer.value=eval(calcy.answer.value)">
+        </div>
+
+        <div class="layer-2">
+          <input type="button" value="7" id="seven"  class="box" onclick="calcy.answer.value+='7'">
+          <input type="button" value="8" id="eight"  class="box" onclick="calcy.answer.value+='8'">
+          <input type="button" value="9" id="nine"   class="box" onclick="calcy.answer.value+='9'">
+          <input type="button" value="*" id="mult"   class="box" onclick="calcy.answer.value+='*'">
+        </div>
+        <div class="layer-2">
+          <input type="button" value="4" id="four"   class="box" onclick="calcy.answer.value+='4'"> 
+          <input type="button" value="5" id="five"   class="box" onclick="calcy.answer.value+='5'" >
+          <input type="button" value="6" id="six"    class="box" onclick="calcy.answer.value+='6'" >
+          <input type="button" value="-" id="minus"  class="box" onclick="calcy.answer.value+='-'" >
+        </div>
+        <div class="layer-2">
+          <input type="button" value="1" id="one"   class="box"  onclick="calcy.answer.value+='1'">
+          <input type="button" value="2" id="two"   class="box" onclick="calcy.answer.value+='2'">
+          <input type="button" value="3" id="three" class="box" onclick="calcy.answer.value+='3'">
+          <input type="button" value="+" id="plus"  class="box" onclick="calcy.answer.value+='+'">  
+        </div>
+        <div class="layer-2">
+          <input type="button" value="0" id="zero"   class="box" onclick="calcy.answer.value+='0'">
+          <input type="button" value="." id="dot"    class="box" onclick="calcy.answer.value+='.'">
+          <input type="button" value="%" id="perc"   class="box" onclick="calcy.answer.value+='%'">
+          <input type="button" value="/" id="divide" class="box" onclick="calcy.answer.value+='/'">
+        </div>
+    </form>
+  </div>
+</body>
+<script src="cal.js"></script>
+</html>

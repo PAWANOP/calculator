@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: red;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#display_answer{
+  padding: 30PX 0;
+  width: 100%;
+}
+#clearbutton,#answerbutton{
+  padding: 12px 0;
+  text-align: center;
+}
+#display_answer :placeholder{
+  text-align: right;
+}
+.layer-1{
+  display: flex;
+}
+.layer-2{
+  display: flex;
+}
+
+.box{
+  padding: 30px 0;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+.box:hover{
+  color: white;
+    background: black;
+}
